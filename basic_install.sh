@@ -1,3 +1,4 @@
+#c tool
 sudo yum -y  install gcc gcc-c++
 sudo yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
 sudo yum -y install git-core
@@ -6,4 +7,10 @@ sudo yum -y install scons
 sudo yum -y install libstdc++*
 sudo yum -y install tmux
 sudo yum -y install autojump && echo ". /usr/share/autojump/autojump.bash" >> ~/.bashrc && source ~/.bashrc
-sudo yum -y install nload 
+sudo yum -y install nload
+
+#python
+sudo yum -y upgrade python-setuptools
+sudo yum -y install python-pip python-wheel
+sudo pip install --upgrade pip
+sudo pip install requests
